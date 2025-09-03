@@ -1,5 +1,5 @@
 import Actividades from "@/sections/actividades";
-import Camping from "@/sections/camping";
+
 import Contacto from "@/sections/contacto";
 import Footer from "@/sections/footer";
 import Gallery from "@/sections/gallery";
