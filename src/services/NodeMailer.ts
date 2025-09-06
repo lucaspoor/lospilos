@@ -13,6 +13,7 @@ export class NodeMailer implements Mailer {
       },
     };
     this.transporter = nodemailer.createTransport(smtpParams);
+    console.log(smtpParams);
     this.transporter.logger = {
       debug: (s: any) => {
         console.log(s);

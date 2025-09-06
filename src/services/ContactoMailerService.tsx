@@ -28,6 +28,7 @@ export class ContactosMailerService {
       html: await render(<EmaiSolicitante contacto={this.__contacto} />),
       text: "habilitar html por favor",
     };
+    console.log("Enviando email a solicitante", params);
     return await this.mailer.send(params);
   }
 
@@ -44,7 +45,8 @@ export class ContactosMailerService {
       html: await render(<EmailOrganizacion contacto={this.__contacto} />),
       text: "habilitar html por favor",
     };
-    this.mailer.send(params);
+    console.log("Enviando email ornanización", params);
+    await this.mailer.send(params);
 
     return emails;
   }

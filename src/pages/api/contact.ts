@@ -11,7 +11,7 @@ type Token = {
 };
 let tokens: Array<Token> = [];
 
-const EXPIRATION_MINUTES = 5;
+const EXPIRATION_MINUTES = 15;
 
 export default async function handler(
   req: NextApiRequest,

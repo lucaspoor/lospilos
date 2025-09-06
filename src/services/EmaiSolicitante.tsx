@@ -1,5 +1,5 @@
-import React from 'react';
-import { Html, Text } from '@react-email/components';
+import React from "react";
+import { Html, Text } from "@react-email/components";
 
 export function EmaiSolicitante({ contacto }: { contacto: any }) {
   if (!contacto) return <Text>Error, no viene la contacto</Text>;
@@ -19,7 +19,7 @@ export function EmaiSolicitante({ contacto }: { contacto: any }) {
       <div>
         Atte,
         <br /> Servicio al Cliente
-        <br /> Komplaints
+        <br /> Los Pilos, Caburgua
       </div>
     </Html>
   );

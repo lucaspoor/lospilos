@@ -1,6 +1,6 @@
-import React from 'react';
-import { Text, Html } from '@react-email/components';
-import { DatosContacto } from '@komplaints/api-interfaces';
+import React from "react";
+import { Text, Html } from "@react-email/components";
+import { DatosContacto } from "./DatosContacto";
 
 export function EmailOrganizacion({ contacto }: { contacto: DatosContacto }) {
   return (
@@ -15,7 +15,7 @@ export function EmailOrganizacion({ contacto }: { contacto: DatosContacto }) {
 
       <p>
         Atte,
-        <br /> Komplaints
+        <br /> Los Pilos, Caburgua
       </p>
     </Html>
   );
