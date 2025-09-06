@@ -8,16 +8,17 @@ import {
   Facebook,
   Instagram,
 } from "lucide-react";
-import { ContactForm } from "./ContactForm";
 
-export default function Contacto() {
+import { ContactFormContainer } from "./contact-form-container";
+
+export default function ContactSection() {
   return (
-    <section className="relative bg-white text-gray-800 py-20 px-6">
+    <section className="relative bg-white text-gray-800 py-20 md:px-6 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Columna izquierda: Formulario */}
-        <div className="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200">
+        <div className="bg-gray-50 rounded-2xl md:p-8 p-6 shadow-lg border border-gray-200">
           <h2 className="text-3xl mb-6 text-cyan-700">Contáctanos</h2>
-          <ContactForm />
+          <ContactFormContainer />
         </div>
 
         {/* Columna derecha: Datos de contacto */}
@@ -35,7 +36,7 @@ export default function Contacto() {
               <Phone className="text-cyan-500" /> +56 9 1234 5678
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="text-cyan-500" /> contacto@campinglospilos.cl
+              <Mail className="text-cyan-500" /> contacto@lospilos.cl
             </li>
             <li className="flex items-center gap-3">
               <MessageCircle className="text-cyan-500" /> WhatsApp: +56 9 9876

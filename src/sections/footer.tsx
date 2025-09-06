@@ -8,8 +8,9 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold">Camping Los Pilos</h2>
           <p className="mt-4 text-sm text-gray-200">
-            Disfruta la naturaleza con la mejor vista al lago, rodeado de paz y aire puro.
-            Ven a vivir la experiencia de acampar en un entorno único.
+            Disfruta la naturaleza con la mejor vista al lago, rodeado de paz y
+            aire puro. Ven a vivir la experiencia de acampar en un entorno
+            único.
           </p>
         </div>
 
@@ -18,16 +19,24 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-cyan-300 transition">Inicio</a>
+              <a href="#" className="hover:text-cyan-300 transition">
+                Inicio
+              </a>
             </li>
             <li>
-              <a href="#" className="hover:text-cyan-300 transition">Reservas</a>
+              <a href="#" className="hover:text-cyan-300 transition">
+                Reservas
+              </a>
             </li>
             <li>
-              <a href="#" className="hover:text-cyan-300 transition">Actividades</a>
+              <a href="#" className="hover:text-cyan-300 transition">
+                Actividades
+              </a>
             </li>
             <li>
-              <a href="#" className="hover:text-cyan-300 transition">Contacto</a>
+              <a href="#" className="hover:text-cyan-300 transition">
+                Contacto
+              </a>
             </li>
           </ul>
         </div>
@@ -37,7 +46,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Contacto</h3>
           <p className="text-sm">📍 Orilla del Lago, Chile</p>
           <p className="text-sm">📞 +56 9 1234 5678</p>
-          <p className="text-sm">✉️ contacto@campinglospilos.cl</p>
+          <p className="text-sm">✉️ contacto@lospilos.cl</p>
 
           {/* Redes sociales */}
           <div className="flex space-x-4 mt-4">

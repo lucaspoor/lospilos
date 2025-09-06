@@ -1,6 +1,6 @@
 import Actividades from "@/sections/actividades";
 
-import Contacto from "@/sections/contacto";
+import ContactSection from "@/sections/contact-section";
 import Footer from "@/sections/footer";
 import Gallery from "@/sections/gallery";
 import Hero from "@/sections/hero";
@@ -20,11 +20,9 @@ export default function Home() {
       <Reserva></Reserva>
       <Actividades></Actividades>
 
-     
-
       <Gallery></Gallery>
-       <Ubicacion></Ubicacion>
-       <Contacto></Contacto>
+      <Ubicacion></Ubicacion>
+      <ContactSection></ContactSection>
       <Footer></Footer>
     </div>
   );
