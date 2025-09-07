@@ -58,6 +58,8 @@ export default function Hero() {
 
   return (
     <div id="link_inicio" className={`overflow-clip relative md:h-[800px] sm:h-[750px] h-[650px] `}>
+         <Navbar></Navbar>
+         
       <div className="flex justify-center bg-black bg-opacity-40 hero-overlay overflow-x-auto  ">
         <Image
           alt="Banner"
@@ -71,7 +73,7 @@ export default function Hero() {
       </div>
       <div className="absolute top-0 right-0 left-0 bottom-0 ">
         <div className="flex w-full h-full justify-center items-center ">
-          <div className="flex flex-col px-6  items-baseline-last text-white ">
+          <div data-aos="fade-up" className="flex flex-col px-6  items-baseline-last text-white ">
             <p className="font-roboto  xl:text-3xl text-xl tracking-widest">
               Bienvenidos a el
             </p>
@@ -84,7 +86,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <Navbar></Navbar>
+     
       </div>
     </div>
   );

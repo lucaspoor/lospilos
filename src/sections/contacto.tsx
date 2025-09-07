@@ -4,8 +4,8 @@ import { Phone, Mail, MessageCircle, Clock, Facebook, Instagram } from "lucide-r
 
 export default function Contacto() {
   return (
-    <section className="relative bg-white text-gray-800 py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section id="link_contacto" className="relative scroll-m-10 bg-white text-gray-800 py-20 px-6">
+      <div data-aos="fade-up" className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         
         {/* Columna izquierda: Formulario */}
         <div className="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200">

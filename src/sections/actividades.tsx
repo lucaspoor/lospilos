@@ -52,9 +52,9 @@ export default function Actividades() {
 
 
   return (
-    <section  className="bg-white py-16 px-6">
-      <div className="max-w-5xl mx-auto relative">
-        <h2 className="text-3xl text-cyan-800 text-center mb-4">Actividades Y Entretenimiento</h2>
+    <section id="link_actividades"  className="bg-white py-16 px-6">
+      <div data-aos="fade-up" className="max-w-5xl mx-auto relative">
+        <h2 className="text-4xl text-cyan-800 text-center mb-4">Actividades Y Entretenimiento</h2>
         <p className="text-center mb-12 text-gray-600">
           ALgunas de las actividades recreativas que puedes realizar en nuestro camping
         </p>

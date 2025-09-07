@@ -1,7 +1,7 @@
 export default function History() {
   return (
     <section className="bg-white text-cyan-100 py-28 px-6 space-y-20">
-      <div className="max-w-7xl mx-auto">
+      <div data-aos="fade-up" className="max-w-7xl mx-auto">
         <h2 className="text-4xl text-cyan-900 mb-4 ">
           Nuestros Campings y Características
         </h2>
@@ -10,7 +10,7 @@ export default function History() {
           a la naturaleza lorem ipsum dolor lorem ipsum dolo lorem ipsum dolor
         </p>
       </div>
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-up" className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Imagen izquierda */}
         <div className="relative">
           <img
@@ -52,7 +52,7 @@ export default function History() {
       </div>
 
       {/* Segundo bloque invertido */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-up" className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Texto izquierda */}
         <div className="order-2 md:order-1">
           <h2 className="text-4xl  text-cyan-900 mb-6">

@@ -4,8 +4,8 @@ import { MapPin, Car, Bus, ParkingCircle } from "lucide-react";
 
 export default function Ubicacion() {
   return (
-    <section className="bg-cyan-900 text-white py-16 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="link_ubicacion" className="bg-cyan-900  text-white py-16 px-6">
+      <div data-aos="fade-up" className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Columna izquierda: texto */}
         <div>
           <h2 className="text-3xl  mb-10">Ubicación & Cómo llegar</h2>

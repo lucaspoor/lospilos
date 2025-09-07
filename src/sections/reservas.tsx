@@ -4,8 +4,8 @@ import { Tag } from "lucide-react";
 
 export default function ReservaTarifa() {
   return (
-    <section className="bg-cyan-800 text-white py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="link_reservas" className="bg-cyan-800 text-white py-20 px-6">
+      <div data-aos="fade-up" className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Columna izquierda: contenido */}
         <div>
           <h2 className="text-3xl  mb-4">
@@ -57,7 +57,7 @@ export default function ReservaTarifa() {
         {/* Columna derecha: imagen */}
         <div className="w-full h-80 md:h-full  overflow-hidden shadow-xl">
           <img
-            src="/im/gal/estrellas.jpg"
+            src="/im/nuevas/lagoparaiso.jpeg"
             alt="Refugio camping"
             className="w-full h-full object-cover"
           />

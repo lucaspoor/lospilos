@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
 
       {/* Línea inferior */}
-      <div className="border-t border-cyan-700 mt-8 pt-4 text-center text-sm text-gray-200">
+      <div  className="border-t border-cyan-700 mt-8 pt-4 text-center text-sm text-gray-200">
         © 2025 Camping Los Pilos. Todos los derechos reservados.
       </div>
     </footer>

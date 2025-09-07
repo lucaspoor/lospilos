@@ -10,10 +10,10 @@ export default function Navbar() {
 
   const navbar = [
     { text: "Inicio", link: "#link_inicio" },
-    { text: "Reservas", link: "#link_inicio" },
-    { text: "Actividades", link: "#link_inicio" },
-    { text: "Ubicación", link: "#link_inicio" },
-    { text: "Contacto", link: "#link_inicio" },
+    { text: "Reservas", link: "#link_reservas" },
+    { text: "Actividades", link: "#link_actividades" },
+    { text: "Ubicación", link: "#link_ubicacion" },
+    { text: "Contacto", link: "#link_contacto" },
   ];
 
   return (
