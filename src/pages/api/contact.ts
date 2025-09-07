@@ -21,15 +21,21 @@ export default async function handler(
     const authHeader = req.headers.authorization;
     const token = authHeader?.split(" ")[1];
 
-    if (!token)
+    if (!token) {
+      console.log("Spam detectado, request sin token");
       return res.status(401).json({ error: "Invalid request x" } as any);
+    }
 
-    if (!isValid(token))
+    if (!isValid(token)) {
+      console.log("Spam detectado, token inválido");
       return res.status(401).json({ error: "Invalid request y" } as any);
-
+    }
     const contacto = req.body;
 
-    if (contacto.comentario) return res.status(400);
+    if (contacto.comentario) {
+      console.log("Spam detectado, campo comentario con datos");
+      return res.status(400);
+    }
 
     if (!(contacto && contacto.nombre && contacto.email && contacto.nombre))
       return res.status(400).send({
