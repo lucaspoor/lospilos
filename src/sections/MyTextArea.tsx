@@ -7,12 +7,5 @@ export const MyTextArea = (props: {
 }) => {
   const [field, meta] = useField(props);
 
-  return (
-    <div>
-      <textarea {...field} {...props} />
-      {meta.touched && meta.error ? (
-        <div className="text-red-500 text-sm">{meta.error}</div>
-      ) : null}
-    </div>
-  );
+  return <textarea {...field} {...props} />;
 };
