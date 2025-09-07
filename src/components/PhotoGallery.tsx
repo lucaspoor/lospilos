@@ -73,7 +73,6 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ images }) => {
 
   return (
     <div className="max-w-6xl mx-auto py-12 px-0">
-      <h2 className="text-2xl font-semibold mb-6 px-4">Galería de Fotos</h2>
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-1">
         {images.map((src, idx) => (
           <motion.div
