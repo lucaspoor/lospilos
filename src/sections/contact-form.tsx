@@ -11,7 +11,10 @@ const ArticleSchema = Yup.object().shape({
     .required("Por favor ingrese el email")
     .min(3)
     .max(64),
-  mensaje: Yup.string().required("Por favor ingrese el mensaje").min(3).max(64),
+  mensaje: Yup.string()
+    .required("Por favor ingrese el mensaje")
+    .min(3)
+    .max(512),
 });
 
 export function ContactForm({ token }: { token: string }) {
