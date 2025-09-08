@@ -61,6 +61,7 @@ export default function Navbar() {
           {navbar.map((e, i) => {
             return (
               <Link
+                key={e.text}
                 href={e.link}
                 className="hover:text-cyan-300 transition"
                 onClick={() => setIsOpen(false)}

@@ -77,7 +77,7 @@ export default function Hero() {
         <div className="flex w-full h-full justify-center items-center ">
           <div data-aos="fade-up" className="flex flex-col px-6  items-baseline-last text-white ">
             <p className="font-roboto  xl:text-3xl text-xl tracking-widest">
-              Bienvenidos a el
+              Bienvenidos al
             </p>
             <h1 className=" text-7xl text-shadow-lg  ">CAMPING LOS PILOS</h1>
             <h2 className="xl:text-4xl text-xl  mt-5">

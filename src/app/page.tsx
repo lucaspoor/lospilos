@@ -1,9 +1,12 @@
 "use client"
 
+import Navbar from "@/components/navbar";
+import { PhotoGallery } from "@/components/PhotoGallery";
 import Actividades from "@/sections/actividades";
 
-import Contacto from "@/sections/contacto";
+import ContactSection from "@/sections/contact-section";
 import Footer from "@/sections/footer";
+import Galeria from "@/sections/galeria";
 import Gallery from "@/sections/gallery";
 import Hero from "@/sections/hero";
 import History from "@/sections/history";
@@ -16,6 +19,27 @@ import { useEffect } from "react";
 
 const arreglo = [1, 2, 3, 4];
 
+
+const images = [
+  "/im/gal/playa.jpeg",
+  "/im/gal/cascada.jpeg",
+  "/im/gal/cristalino.jpeg",
+  "/im/gal/juegosluz.jpeg",
+  "/im/gal/juegospucon.jpeg",
+  "/im/gal/laplaya.jpeg",
+  "/im/gal/mediterraneo.jpeg",
+  "/im/gal/olas.jpeg",
+  "/im/gal/otoño.jpeg",
+  "/im/gal/primavera.jpeg",
+  "/im/gal/boyas.jpg",
+  "/im/gal/entrada.jpg",
+  "/im/gal/espacios.jpg",
+  "/im/gal/estrellas.jpg",
+  "/im/gal/jardin.jpg",
+  "/im/gal/lago.jpg",
+  "/im/gal/niños.jpg",
+];
+
 export default function Home() {
   
     useEffect(() => {
@@ -24,17 +48,13 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar></Navbar>
       <Hero></Hero>
       <Servicios></Servicios>
       <Actividades></Actividades>
-
-      <Reserva></Reserva>
-
-      <History></History>
-
-      <Gallery></Gallery>
+      <Galeria></Galeria>
       <Ubicacion></Ubicacion>
-      <Contacto></Contacto>
+      <ContactSection></ContactSection>
       <Footer></Footer>
     </div>
   );
