@@ -43,8 +43,8 @@ export default function Ubicacion() {
             <li className="flex items-start gap-3">
               <Bus className="text-cyan-400 mt-1" size={20} />
               <span>
-                <strong>En transporte público:</strong> Buses desde [Ciudad]
-                hasta [Pueblo cercano], luego taxi o transfer local.
+                <strong>En transporte público:</strong> Buses desde Pucón hasta
+                parque Huerquehue, bajar Los Pilos, km 6
               </span>
             </li>
             <li className="flex items-start gap-3">
