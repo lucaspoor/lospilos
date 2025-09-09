@@ -12,7 +12,7 @@ export function ContactFormContainer() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`/api/contact`)
+      .get(`/scontact`)
       .then((response) => {
         setData(response.data);
         setLoading(false);

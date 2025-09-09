@@ -31,7 +31,7 @@ export function ContactForm({ token }: { token: string }) {
     setEnviando(true);
 
     axios
-      .post(`/api/contact`, values, {
+      .post(`/scontact`, values, {
         headers: {
           Authorization: `bearer ${token}`,
         },
