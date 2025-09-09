@@ -45,7 +45,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contacto</h3>
           <p className="text-sm">📍 Camping Los Pilos, Pucón, Chile</p>
-          <p className="text-sm">📞 +56 9 1234 5678</p>
+          <p className="text-sm">📞 +56 9 9615 1880</p>
           <p className="text-sm">✉️ contacto@lospilos.cl</p>
 
           {/* Redes sociales */}
