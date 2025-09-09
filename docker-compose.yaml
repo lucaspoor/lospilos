@@ -6,7 +6,7 @@ services:
       context: .
     container_name: lospilos
     ports:
-      - "3500:80"
+      - "3500:3000"
     env_file:
       - .env
 
