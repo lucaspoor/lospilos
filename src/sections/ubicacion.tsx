@@ -56,12 +56,14 @@ export default function Ubicacion() {
             </li>
           </ul>
           {navUrl && (
-            <a
-              href={navUrl}
-              className="mt-6 w-full p-3 px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 text-white hover:from-cyan-400 hover:to-cyan-500 transition-all shadow-md hover:shadow-lg font-semibold"
-            >
-              Abrir app de conducción
-            </a>
+            <div className="w-full flex justify-center">
+              <a
+                href={navUrl}
+                className="p-3 px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 text-white hover:from-cyan-400 hover:to-cyan-500 transition-all shadow-md hover:shadow-lg font-semibold"
+              >
+                Abrir app de conducción
+              </a>
+            </div>
           )}
         </div>
 
