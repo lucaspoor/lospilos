@@ -34,7 +34,7 @@ export default function ContactSection() {
 
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-center gap-3">
-              <Phone className="text-cyan-500" /> +56 9 1234 5678
+              <Phone className="text-cyan-500" /> +56 9 9876 5432
             </li>
             <li className="flex items-center gap-3">
               <Mail className="text-cyan-500" /> {atob(enc)}
