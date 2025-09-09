@@ -62,9 +62,16 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <a
+        className="bottom-4 right-4 fixed"
+        aria-label="Chat on WhatsApp"
+        href="https://wa.me/56996151880"
+      >
+        <img className="h-12" alt="Contáctanos por WhatsApp" src="wtsp.png" />
+      </a>
 
       {/* Línea inferior */}
-      <div  className="border-t border-cyan-700 mt-8 pt-4 text-center text-sm text-gray-200">
+      <div className="border-t border-cyan-700 mt-8 pt-4 text-center text-sm text-gray-200">
         © 2025 Camping Los Pilos. Todos los derechos reservados.
       </div>
     </footer>
