@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -17,7 +17,8 @@ const actividades = [
   },
   {
     titulo: "Paseos en bote o kayak",
-    descripcion: "Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva.",
+    descripcion:
+      "Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva.",
     img: "/im/gal/espacios.jpg",
   },
   {
@@ -45,23 +46,20 @@ export default function Actividades() {
     setIndex((prev) => (prev === actividades.length - 1 ? 0 : prev + 1));
   };
 
-
-
-
   // autoplay
 
-
   return (
-    <section id="link_actividades"  className="bg-white py-16 px-6">
+    <section id="link_actividades" className="bg-white py-16 px-6">
       <div data-aos="fade-up" className="max-w-5xl mx-auto relative">
-        <h2 className="text-4xl text-cyan-800 text-center mb-4">Actividades Y Entretenimiento</h2>
+        <h2 className="text-4xl text-cyan-800 text-center mb-4">
+          Actividades Y Entretenimiento
+        </h2>
         <p className="text-center mb-12 text-gray-600">
-          ALgunas de las actividades recreativas que puedes realizar en nuestro camping
+          Algunas de las actividades recreativas que puedes realizar:
         </p>
 
         {/* contenedor principal */}
         <div
-         
           className="relative overflow-hidden  shadow-lg h-[36rem]"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
