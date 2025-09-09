@@ -1,18 +1,18 @@
 export default function Gallery() {
   return (
-    <section  id="link_galeria" className="py-24 pb-36 bg-white">
+    <section id="link_galeria" className="py-24 pb-36 bg-white">
       <div id="lucas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Título */}
-        <h2 className="text-4xl text-cyan-800 text-center mb-4">Galería de fotos</h2>
+        <h2 className="text-4xl text-cyan-800 text-center mb-4">
+          Galería de fotos
+        </h2>
         <p className="text-center mb-12 text-gray-600">
-          ¡Fotos de los paisajes y espacios que posee nuestro camping junto a nuestra gente!
+          ¡ Fotos de los paisajes y espacios del camping !
         </p>
-
 
         {/* Grid de imágenes */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {[
-           
             "playa.jpeg",
             "cascada.jpeg",
             "cristalino.jpeg",
@@ -24,8 +24,7 @@ export default function Gallery() {
             "otoño.jpeg",
             "primavera.jpeg",
 
-
-             "boyas.jpg",
+            "boyas.jpg",
             "entrada.jpg",
             "espacios.jpg",
             "estrellas.jpg",
@@ -34,7 +33,7 @@ export default function Gallery() {
             "niños.jpg",
           ].map((img, idx) => (
             <div
-            data-aos="fade-up"
+              data-aos="fade-up"
               key={idx}
               className="relative group overflow-hidden  m-3 "
             >
