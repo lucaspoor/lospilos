@@ -2,9 +2,22 @@
 
 import { MapPin, Car, Bus, ParkingCircle } from "lucide-react";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 const MapView = dynamic(() => import("./MapView"), { ssr: false });
 
+const lan = -39.187038135362215;
+const lon = -71.77515149116516;
+
 export default function Ubicacion() {
+  const [navUrl, setNavUrl] = useState("");
+
+  useEffect(() => {
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const url = isIOS
+      ? `http://maps.apple.com/?daddr=${lan},${lon}`
+      : `https://www.google.com/maps/dir/?api=1&destination=${lan},${lon}`;
+    setNavUrl(url);
+  }, []);
   return (
     <section id="link_ubicacion" className="bg-cyan-900  text-white py-16 px-6">
       <div
@@ -19,7 +32,7 @@ export default function Ubicacion() {
             solo <strong>21 km de Pucón</strong>.
           </p>
 
-          <ul className="space-y-4 text-gray-300">
+          <ul className="space-y-4 text-gray-300 m-8">
             <li className="flex items-start gap-3">
               <Car className="text-cyan-400 mt-1" size={20} />
               <span>
@@ -42,6 +55,14 @@ export default function Ubicacion() {
               </span>
             </li>
           </ul>
+          {navUrl && (
+            <a
+              href={navUrl}
+              className="mt-6 w-full p-3 px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-cyan-600 text-white hover:from-cyan-400 hover:to-cyan-500 transition-all shadow-md hover:shadow-lg font-semibold"
+            >
+              Abrir app de conducción
+            </a>
+          )}
         </div>
 
         {/* Columna derecha: mapa */}
