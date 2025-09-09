@@ -14,7 +14,10 @@ const enc = "Y29udGFjdG9AbG9zcGlsb3MuY2w=";
 
 export default function ContactSection() {
   return (
-    <section className="relative bg-white text-gray-800 py-20 md:px-6 px-4">
+    <section
+      className="relative bg-white text-gray-800 py-20 md:px-6 px-4"
+      id="link_contacto"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Columna izquierda: Formulario */}
         <div className="bg-gray-50 rounded-2xl md:p-8 p-6 shadow-lg border border-gray-200">
