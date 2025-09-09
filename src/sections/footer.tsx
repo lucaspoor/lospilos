@@ -50,13 +50,16 @@ export default function Footer() {
 
           {/* Redes sociales */}
           <div className="flex space-x-4 mt-4">
-            <a href="#" className="hover:text-cyan-300 transition">
-              <Globe size={20} />
-            </a>
-            <a href="#" className="hover:text-cyan-300 transition">
+            <a
+              href="https://www.facebook.com/groups/39115305147/"
+              className="hover:text-cyan-300 transition"
+            >
               <Facebook size={20} />
             </a>
-            <a href="#" className="hover:text-cyan-300 transition">
+            <a
+              href="https://www.instagram.com/explore/locations/1022170229/camping-los-pilos"
+              className="hover:text-cyan-300 transition"
+            >
               <Instagram size={20} />
             </a>
           </div>
