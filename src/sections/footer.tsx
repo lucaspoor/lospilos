@@ -71,8 +71,12 @@ export default function Footer() {
       </a>
 
       {/* Línea inferior */}
-      <div className="border-t border-cyan-700 mt-8 pt-4 text-center text-sm text-gray-200">
-        © 2025 Camping Los Pilos. Todos los derechos reservados.
+      <div className="border-t py-10 border-cyan-700 mt-8 text-center text-sm text-gray-200">
+        © 2025 Camping Los Pilos. Todos los derechos reservados. Desarrollado
+        por:{" "}
+        <a className="underline" href="https://www.pooweb.cl/">
+          Poo Web
+        </a>
       </div>
     </footer>
   );
