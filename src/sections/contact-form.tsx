@@ -161,7 +161,7 @@ export function ContactForm({ token }: { token: string }) {
                     <MyTextArea
                       name="mensaje"
                       className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-                      rows={6}
+                      rows={4}
                     />
                   </div>
 

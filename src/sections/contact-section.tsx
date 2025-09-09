@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import { ContactFormContainer } from "./contact-form-container";
+const enc = "Y29udGFjdG9AbG9zcGlsb3MuY2w=";
 
 export default function ContactSection() {
   return (
@@ -22,7 +23,7 @@ export default function ContactSection() {
         </div>
 
         {/* Columna derecha: Datos de contacto */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-6 mx-4">
           <h2 className="text-3xl mb-2 text-cyan-700">
             Información de contacto
           </h2>
@@ -36,7 +37,7 @@ export default function ContactSection() {
               <Phone className="text-cyan-500" /> +56 9 1234 5678
             </li>
             <li className="flex items-center gap-3">
-              <Mail className="text-cyan-500" /> contacto@lospilos.cl
+              <Mail className="text-cyan-500" /> {atob(enc)}
             </li>
             <li className="flex items-center gap-3">
               <MessageCircle className="text-cyan-500" /> WhatsApp: +56 9 9876
@@ -59,16 +60,16 @@ export default function ContactSection() {
           {/* Redes sociales */}
           <div className="flex gap-6 mt-4">
             <a
-              href="#"
-              className="p-3 bg-gray-100 rounded-full hover:bg-cyan-500 hover:text-white transition shadow"
+              href="https://www.facebook.com/groups/39115305147/"
+              className="hover:text-cyan-300 transition"
             >
-              <Facebook />
+              <Facebook size={20} />
             </a>
             <a
-              href="#"
-              className="p-3 bg-gray-100 rounded-full hover:bg-cyan-500 hover:text-white transition shadow"
+              href="https://www.instagram.com/explore/locations/1022170229/camping-los-pilos"
+              className="hover:text-cyan-300 transition"
             >
-              <Instagram />
+              <Instagram size={20} />
             </a>
           </div>
         </div>

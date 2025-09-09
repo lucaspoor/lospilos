@@ -1,5 +1,7 @@
 import { Facebook, Instagram, Globe } from "lucide-react";
 
+const enc = "Y29udGFjdG9AbG9zcGlsb3MuY2w=";
+
 export default function Footer() {
   return (
     <footer className="bg-cyan-800 text-white py-10">
@@ -46,7 +48,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Contacto</h3>
           <p className="text-sm">📍 Camping Los Pilos, Pucón, Chile</p>
           <p className="text-sm">📞 +56 9 9615 1880</p>
-          <p className="text-sm">✉️ contacto@lospilos.cl</p>
+          <p className="text-sm">✉️ {atob(enc)}</p>
 
           {/* Redes sociales */}
           <div className="flex space-x-4 mt-4">
