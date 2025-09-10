@@ -16,7 +16,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-cyan-800 text-white  fixed top-0 left-0 w-full z-50">
+    <nav
+      className="text-white  fixed top-0 left-0 w-full z-50"
+      style={{
+        backgroundColor: "rgba(0, 95, 120, .75)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
 
@@ -46,8 +51,11 @@ export default function Navbar() {
       {/* Menú móvil desplegable */}
 
       <div
+        style={{
+          backgroundColor: "rgba(0, 95, 120, .95)",
+        }}
         className={`
-          absolute top-24 left-0 w-full bg-cyan-800 shadow-md md:hidden
+          absolute top-24 left-0 w-full shadow-md md:hidden
           transform transition-all duration-300 ease-in-out
           ${
             isOpen
