@@ -12,22 +12,22 @@ const courses = [
 
 const ServiciosInstalaciones = () => {
   return (
-    <div className=" text-white py-10 bg-gray-500">
+    <div className=" text-white py-10 bg-cyan-600">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
         {/* Logo y descripción */}
-        <div>
+        <div className="text-sm">
           <h2 className="text-3xl font-bold mb-4">
             Resumen Servicios e Instalaciones
           </h2>
 
           <div className="mb-4">
-            <h3 className="text-xl font-bold">Playa privada</h3>
+            <h3 className="text-lg font-bold">Playa privada</h3>
             <ul>
               <li>Acceso directo al Lago Caburgua</li>
             </ul>
           </div>
           <div className="mb-4">
-            <h3 className="text-xl font-bold">Sitios espaciosos</h3>
+            <h3 className="text-lg font-bold">Sitios espaciosos</h3>
             <ul>
               <li>~40 m²</li>
               <li>Buena sombra</li>
@@ -35,7 +35,7 @@ const ServiciosInstalaciones = () => {
             </ul>
           </div>
           <div className="mb-4">
-            <h3 className="text-xl font-bold">Equipamiento por sitio</h3>
+            <h3 className="text-lg font-bold">Equipamiento por sitio</h3>
 
             <ul>
               <li>Lavadero</li>
@@ -45,7 +45,7 @@ const ServiciosInstalaciones = () => {
             </ul>
           </div>
           <div className="mb-4">
-            <h3 className="text-xl font-bold">Instalaciones comunes</h3>
+            <h3 className="text-lg font-bold">Instalaciones comunes</h3>
             <ul>
               <li>Baños con agua caliente</li>
               <li>Quincho</li>
@@ -54,7 +54,7 @@ const ServiciosInstalaciones = () => {
           </div>
 
           <div className="mb-4">
-            <h3 className="text-xl font-bold">Actividades & recreación</h3>
+            <h3 className="text-lg font-bold">Actividades & recreación</h3>
             <ul>
               <li>Mesa de ping-pong</li>
               <li>Parque de juegos infantil</li>
