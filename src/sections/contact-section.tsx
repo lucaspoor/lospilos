@@ -37,14 +37,13 @@ export default function ContactSection() {
 
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-center gap-3">
-              <Phone className="text-cyan-500" /> +56 9 9876 5432
+              <Phone className="text-cyan-500" /> +56 9 9597 4344
             </li>
             <li className="flex items-center gap-3">
               <Mail className="text-cyan-500" /> {atob(enc)}
             </li>
             <li className="flex items-center gap-3">
-              <MessageCircle className="text-cyan-500" /> WhatsApp: +56 9 9876
-              5432
+              <MessageCircle className="text-cyan-500" /> WhatsApp: +56 9 9597 4344
             </li>
           </ul>
 

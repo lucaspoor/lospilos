@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { ServiciosInstalaciones } from "@/components/servicios";
 import Actividades from "@/sections/actividades";
+import { MapPucon } from "@/sections/alrededores";
 
 import ContactSection from "@/sections/contact-section";
 import Footer from "@/sections/footer";
@@ -56,6 +57,7 @@ export default function Home() {
       <Ubicacion></Ubicacion>
       <ContactSection></ContactSection>
       <ServiciosInstalaciones></ServiciosInstalaciones>
+
       <Footer></Footer>
     </div>
   );

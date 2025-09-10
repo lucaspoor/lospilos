@@ -57,7 +57,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contacto</h3>
           <p className="text-sm">📍 Camping Los Pilos, Pucón, Chile</p>
-          <p className="text-sm">📞 +56 9 9615 1880</p>
+          <p className="text-sm">📞 +56 9 9597 4344</p>
           <p className="text-sm">✉️ {atob(enc)}</p>
 
           {/* Redes sociales */}
@@ -80,7 +80,7 @@ export default function Footer() {
       <a
         className="bottom-4 right-4 fixed"
         aria-label="Chat on WhatsApp"
-        href="https://wa.me/56996151880"
+        href="https://wa.me/56995974344"
       >
         <img className="h-12" alt="Contáctanos por WhatsApp" src="wtsp.png" />
       </a>
