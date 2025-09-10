@@ -1,7 +1,9 @@
-"use client"
+"use client";
 
+import Instalaciones from "@/components/instalaciones";
 import Navbar from "@/components/navbar";
 import { PhotoGallery } from "@/components/PhotoGallery";
+import ServiciosInstalaciones from "@/components/ServiciosInstalaciones";
 import Actividades from "@/sections/actividades";
 
 import ContactSection from "@/sections/contact-section";
@@ -18,7 +20,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const arreglo = [1, 2, 3, 4];
-
 
 const images = [
   "/im/gal/playa.jpeg",
@@ -41,8 +42,7 @@ const images = [
 ];
 
 export default function Home() {
-  
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
