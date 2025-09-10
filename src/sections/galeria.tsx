@@ -28,8 +28,7 @@ export default function Galeria() {
           Galería de fotos
         </h2>
         <p data-aos="fade-up" className="text-center mb-12 text-gray-600">
-          ¡Fotos de los paisajes y espacios que posee nuestro camping junto a
-          nuestra gente!
+          ¡Una selección de fotos de los paisajes y espacios que encuentras en los Pilos y sus alrededores!
         </p>
         <PhotoGallery images={images}></PhotoGallery>
       </div>
