@@ -3,7 +3,7 @@
 import Instalaciones from "@/components/instalaciones";
 import Navbar from "@/components/navbar";
 import { PhotoGallery } from "@/components/PhotoGallery";
-import ServiciosInstalaciones from "@/components/ServiciosInstalaciones";
+import ServiciosInstalaciones from "@/components/servicios";
 import Actividades from "@/sections/actividades";
 
 import ContactSection from "@/sections/contact-section";
@@ -55,6 +55,7 @@ export default function Home() {
       <Galeria></Galeria>
       <Ubicacion></Ubicacion>
       <ContactSection></ContactSection>
+      <ServiciosInstalaciones></ServiciosInstalaciones>
       <Footer></Footer>
     </div>
   );
