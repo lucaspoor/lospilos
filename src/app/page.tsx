@@ -12,6 +12,7 @@ import Footer from "@/sections/footer";
 import Galeria from "@/sections/galeria";
 import Gallery from "@/sections/gallery";
 import Hero from "@/sections/hero";
+import Heroe from "@/sections/heroe";
 import History from "@/sections/history";
 import Reserva from "@/sections/reservas";
 import Servicios from "@/sections/servicios";
@@ -50,14 +51,13 @@ export default function Home() {
   return (
     <div>
       <Navbar></Navbar>
-      <Hero></Hero>
+      <Heroe></Heroe>
       <Servicios></Servicios>
       <Actividades></Actividades>
       <Galeria></Galeria>
       <Ubicacion></Ubicacion>
       <ContactSection></ContactSection>
       <ServiciosInstalaciones></ServiciosInstalaciones>
-
       <Footer></Footer>
     </div>
   );
