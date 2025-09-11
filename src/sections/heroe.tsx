@@ -33,7 +33,7 @@ const movimages = [
 export default function Hero() {
   return (
     <div className="relative">
-      <HeroCarousel images={images} interval={100000} height="h-[100vh]" />
+      <HeroCarousel images={images} interval={5000} height="h-[100vh]" />
     </div>
   );
 }
