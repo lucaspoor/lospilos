@@ -15,6 +15,7 @@ import Hero from "@/sections/hero";
 import Heroe from "@/sections/heroe";
 import History from "@/sections/history";
 import Reserva from "@/sections/reservas";
+import { AtractivosZona } from "@/sections/atractivos-zona";
 import Servicios from "@/sections/servicios";
 import Ubicacion from "@/sections/ubicacion";
 import AOS from "aos";
@@ -58,6 +59,7 @@ export default function Home() {
       <Ubicacion></Ubicacion>
       <ContactSection></ContactSection>
       <ServiciosInstalaciones></ServiciosInstalaciones>
+      <AtractivosZona />
       <Footer></Footer>
     </div>
   );

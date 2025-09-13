@@ -1,7 +1,7 @@
 import React from "react";
 import { lugares } from "./lugares";
 
-export function SeccionLugaresFinal() {
+export function AtractivosZona() {
   return (
     <div className="w-full bg-white flex-col flex items-center  pt-20">
       <div className="max-w-5xl mx-auto px-6 ">
