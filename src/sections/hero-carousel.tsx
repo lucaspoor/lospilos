@@ -201,11 +201,13 @@ export function HeroCarousel({
         ))}
       </div>
       <div className="absolute top-0 left-0 w-full h-full text-white bg-black/10">
-        <div className="grid grid-rows-3 h-screen">
+        <div className="grid grid-rows-3 h-screen md:pl-32">
           <div className=""></div>
           <div className=""></div>
           <div className="flex items-start flex-col justify-start px-4 md:p-16">
-            <div className={`${montserrat.className} font-bold text-lg mb-2`}>
+            <div
+              className={`${montserrat.className} font-bold text-lg mb-2 shadow-2xl`}
+            >
               Camping los Pilos
             </div>
 
@@ -218,7 +220,7 @@ export function HeroCarousel({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-                className="font-bold text-3xl md:text-4xl max-w-md "
+                className="font-bold text-3xl md:text-5xl max-w-4xl  "
               >
                 {images[index].slogan}
               </motion.div>

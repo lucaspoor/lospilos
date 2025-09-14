@@ -1,10 +1,4 @@
 "use client";
-import Image from "next/image";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import useWindowDimensions from "@/functions/getviewport";
-import Navbar from "@/components/navbar";
 import { HeroCarousel } from "./hero-carousel";
 
 const images = [
@@ -21,13 +15,10 @@ const images = [
     src: "/im/hero/llegando.jpg",
     slogan: "Bosques, lagos y montañas a tu alcance",
   },
-];
-
-const movimages = [
-  { src: "/im/hero3mv.png" },
-  { src: "/im/hero/hero3.jpeg" },
-  { src: "/im/hero/hero1.jpg" },
-  { src: "/im/hero/hero4.jpeg" },
+  {
+    src: "/im/hero/atardecer.jpeg",
+    slogan: "El rojo atardecer nos invita al calor del fuego",
+  },
 ];
 
 export default function Hero() {
