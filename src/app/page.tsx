@@ -21,6 +21,7 @@ import Ubicacion from "@/sections/ubicacion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import NavRender from "@/components/navrender";
 
 const arreglo = [1, 2, 3, 4];
 
@@ -51,15 +52,15 @@ export default function Home() {
 
   return (
     <div>
-      <Navbar></Navbar>
+      <NavRender></NavRender>
       <Heroe></Heroe>
       <Servicios></Servicios>
       <Actividades></Actividades>
       <Galeria></Galeria>
       <Ubicacion></Ubicacion>
-      <ContactSection></ContactSection>
-      <ServiciosInstalaciones></ServiciosInstalaciones>
       <AtractivosZona />
+      <ServiciosInstalaciones></ServiciosInstalaciones>
+      <ContactSection></ContactSection>
       <Footer></Footer>
     </div>
   );

@@ -4,8 +4,6 @@ const images = [
   "/im/gal/playa.jpeg",
   "/im/gal/cascada.jpeg",
   "/im/gal/cristalino.jpeg",
-  "/im/gal/juegosluz.jpeg",
-  "/im/gal/juegospucon.jpeg",
   "/im/gal/laplaya.jpeg",
   "/im/gal/mediterraneo.jpeg",
   "/im/gal/olas.jpeg",

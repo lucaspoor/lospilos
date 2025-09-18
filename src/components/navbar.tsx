@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { link } from "fs";
 
-export default function Navbar() {
+export default function Navbar({classname, bg}:any) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navbar = [
@@ -17,12 +17,13 @@ export default function Navbar() {
 
   return (
     <nav
-      className="text-white  fixed top-0 left-0 w-full z-50"
+      className={`text-white ${classname} w-full z-50`}
       style={{
-        backgroundColor: "rgba(0, 95, 120, .75)",
+        background: bg
       }}
+
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
 
         <img src="/im/logowhite.png" className="p-2 lg:w-56 w-48"></img>
@@ -52,10 +53,10 @@ export default function Navbar() {
 
       <div
         style={{
-          backgroundColor: "rgba(0, 95, 120, .95)",
+          backgroundColor: bg
         }}
         className={`
-          absolute top-24 left-0 w-full shadow-md md:hidden
+          absolute top-20 left-0 w-full md:hidden
           transform transition-all duration-300 ease-in-out
           ${
             isOpen
@@ -64,13 +65,13 @@ export default function Navbar() {
           }
         `}
       >
-        <div className="flex flex-col items-center py-6 space-y-4">
+        <div className="flex flex-col shadow-2xl items-center py-8 space-y-4">
           {navbar.map((e, i) => {
             return (
               <Link
                 key={e.text}
                 href={e.link}
-                className="hover:text-cyan-300 transition"
+                className="hover:text-cyan-300  text-lg transition"
                 onClick={() => setIsOpen(false)}
               >
                 {e.text}

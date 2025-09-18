@@ -5,32 +5,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useSwipeable } from "react-swipeable";
 
 const actividades = [
-  {
-    titulo: "Pesca en lago/río",
-    descripcion: "Disfruta de la pesca en un entorno natural único.",
-    img: "/im/gal/boyas.jpg",
+    {
+   titulo: "Pesca en Lago o Río",
+    descripcion: "Disfruta de la pesca en un entorno tranquilo, donde el canto de los pájaros y la brisa sobre el agua hacen de cada captura un momento especial.",
+    img: "/im/actividades/pesca.jpg",
+  },
+   {
+    titulo: "Paseos en Bote o Kayak",
+    descripcion: "Explora la laguna en bote o kayak y disfruta de la calma del agua, la fauna local y paisajes impresionantes. Actividad con reserva previa para momentos tranquilos y seguros.",
+    img: "/im/actividades/kayak.jpg",
   },
   {
     titulo: "Senderismo y caminatas",
-    descripcion: "Explora senderos y vive la naturaleza a tu ritmo.",
-    img: "/im/gal/entrada.jpg",
+ descripcion: "Recorre senderos rodeados de bosque, aire fresco y vistas panorámicas de montañas y lagos. Ideal para conectarte con la naturaleza a tu propio ritmo.",
+    img: "/im/actividades/senda.jpg",
   },
-  {
-    titulo: "Paseos en bote o kayak",
-    descripcion:
-      "Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva. Recorre la laguna en kayak o en bote con reserva.",
-    img: "/im/gal/espacios.jpg",
-  },
-  {
-    titulo: "Actividades familiares",
-    descripcion: "Áreas verdes, juegos y espacios para compartir en familia.",
-    img: "/im/gal/niños.jpg",
-  },
-  {
-    titulo: "Momentos únicos",
-    descripcion: "Captura recuerdos con fotos dinámicas disfrutando del lugar.",
-    img: "/im/gal/boyas.jpg",
-  },
+
+ 
 ];
 
 export default function Actividades() {
@@ -76,16 +67,16 @@ export default function Actividades() {
               <img
                 src={act.img}
                 alt={act.titulo}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-right" 
               />
 
               {/* overlay con fade */}
-              <div className="absolute inset-0 bg-gradient-to-t from-cyan-800/80 via-cyan-800/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-cyan-800 via-cyan-800/20 to-transparent" />
 
               {/* texto encima */}
               <div className="absolute bottom-0 left-0 p-8 text-white max-w-lg">
-                <h3 className="text-2xl font-semibold mb-2">{act.titulo}</h3>
-                <p className="text-sm">{act.descripcion}</p>
+                <h3 className="md:text-3xl text-2xl font-semibold mb-2">{act.titulo}</h3>
+                <p className="md:text-md text-sm">{act.descripcion}</p>
               </div>
             </div>
           ))}

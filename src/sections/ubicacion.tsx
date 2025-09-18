@@ -29,29 +29,20 @@ export default function Ubicacion() {
           <h2 className="text-3xl  mb-10">Ubicación & Cómo llegar</h2>
           <p className="text-lg mb-6 text-gray-200">
             <MapPin className="inline-block mr-2 text-cyan-400" size={20} />A
-            solo <strong>21 km de Pucón</strong>.
+            solo <strong>25,5 km desde Pucón</strong>.
           </p>
 
           <ul className="space-y-4 text-gray-300 m-8">
             <li className="flex items-start gap-3">
               <Car className="text-cyan-400 mt-1" size={20} />
               <span>
-                <strong>En auto:</strong> Acceso por camino Caburgua, dirección
-                hacia renahue. Entrada señalizada.
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Bus className="text-cyan-400 mt-1" size={20} />
-              <span>
-                <strong>En transporte público:</strong> Buses desde Pucón hasta
-                parque Huerquehue, bajar Los Pilos, km 6
+                <strong>En auto:</strong> Toma el camino Pucón – Caburgua y gira a la derecha en dirección a Paillaco – Renahue – Parque Nacional Huerquehue. La entrada está señalizada. Avanza 5 km y encontrarás, a mano izquierda, la bajada hacia el camping.
               </span>
             </li>
             <li className="flex items-start gap-3">
               <ParkingCircle className="text-cyan-400 mt-1" size={20} />
               <span>
-                <strong>Estacionamiento:</strong> Amplios espacios disponibles
-                dentro del camping, sin costo adicional.
+                <strong>Estacionamiento:</strong> Contamos con amplios espacios dentro del camping. Este no tiene costo adicional cuando arriendas un sitio. Para quienes vienen solo a disfrutar de la playa, se cobra un valor por el uso de estacionamiento.
               </span>
             </li>
           </ul>

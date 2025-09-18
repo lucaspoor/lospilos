@@ -8,6 +8,7 @@ import L from "leaflet";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import { useEffect, useState } from "react";
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -25,6 +26,14 @@ const navUrl = isIOS
   : `https://www.google.com/maps/dir/?api=1&destination=${lan},${lon}`;
 
 export default function MapView() {
+  
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) return null;
   return (
     <div className="h-[500px] w-full">
       <MapContainer

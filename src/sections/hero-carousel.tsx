@@ -1,13 +1,11 @@
 import { Montserrat } from "next/font/google";
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
-import { motion, AnimatePresence } from "framer-motion";
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  TouchEvent,
-  KeyboardEvent,
-} from "react";
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef, TouchEvent } from "react";
 
 interface CarouselCaption {
   title: string;
@@ -34,7 +32,7 @@ interface HeroCarouselProps {
 export function HeroCarousel({
   images,
   interval = 5000,
-  height = "h-[60vh]",
+  height = "h-[85vh]", // un poco más alto para desktop
 }: HeroCarouselProps) {
   const [index, setIndex] = useState<number>(0);
   const [isPaused, setIsPaused] = useState<boolean>(false);
@@ -98,7 +96,7 @@ export function HeroCarousel({
 
   return (
     <section
-      className={`relative overflow-hidden ${height} w-full bg-gray-900/5`}
+      className={`relative overflow-hidden ${height} w-full`}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onFocus={() => setIsPaused(true)}
@@ -108,6 +106,7 @@ export function HeroCarousel({
       onTouchEnd={onTouchEnd}
       aria-roledescription="carousel"
     >
+      {/* Slides */}
       <div
         className="absolute inset-0 flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
@@ -124,32 +123,57 @@ export function HeroCarousel({
               className="object-cover w-full h-full"
               loading={i === index ? "eager" : "lazy"}
             />
-
-            {img.caption && (
-              <div className="absolute left-6 bottom-8 max-w-lg p-4 bg-black/40 backdrop-blur-sm rounded-md text-white">
-                <h3 className="text-xl font-semibold">{img.caption.title}</h3>
-                {img.caption.subtitle && (
-                  <p className="mt-1 text-sm opacity-90">
-                    {img.caption.subtitle}
-                  </p>
-                )}
-                {img.caption.cta && (
-                  <a
-                    href={img.caption.cta.href}
-                    className="inline-block mt-3 px-4 py-2 rounded-md border border-white/30 bg-white/10 text-sm hover:bg-white/20"
-                  >
-                    {img.caption.cta.label}
-                  </a>
-                )}
-              </div>
-            )}
+            {/* Overlay oscuro */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 "></div>
           </div>
         ))}
       </div>
 
+      {/* Texto responsivo estilo Patagonia Camp */}
+      <div className="absolute inset-0 z-20 flex items-center">
+        <div
+          className={`${montserrat.className} px-6 md:px-20 lg:px-32 xl:pl-64 xl:pr-20 max-w-4xl text-left`}
+        >
+          {/* Subtítulo pequeño */}
+          <p className="uppercase tracking-widest text-sm md:text-base font-medium text-white/90 mb-3">
+            Bienvenidos a
+          </p>
+
+          {/* Título principal */}
+          <motion.h1
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-3xl md:text-5xl lg:text-6xl  leading-tight text-white"
+            style={{ textShadow: "1px 1px 3px rgba(0,0,0,0.5)" }}
+          >
+            {images[index].slogan}
+          </motion.h1>
+
+          {/* Subtítulo descriptivo */}
+          {images[index].caption?.subtitle && (
+            <p className="mt-4 text-base md:text-lg lg:text-xl text-white/90 max-w-lg leading-relaxed">
+              {images[index].caption.subtitle}
+            </p>
+          )}
+
+          {/* Botón CTA */}
+          {images[index].caption?.cta && (
+            <a
+              href={images[index].caption.cta.href}
+              className="inline-block mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold rounded-md shadow-md hover:bg-yellow-500 transition"
+            >
+              {images[index].caption.cta.label}
+            </a>
+          )}
+        </div>
+      </div>
+
+      {/* Controles */}
       <button
         onClick={prev}
-        className="opacity-50 absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/30 hover:bg-black/50 text-white focus:outline-none focus:ring-2 focus:ring-white"
+        className="opacity-50  md:block hidden absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/10 hover:bg-black/30 text-white"
         aria-label="Previous slide"
       >
         <svg
@@ -170,7 +194,7 @@ export function HeroCarousel({
 
       <button
         onClick={next}
-        className="opacity-50 absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/30 hover:bg-black/50 text-white focus:outline-none focus:ring-2 focus:ring-white"
+        className="opacity-50 absolute  md:block hidden right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/10 hover:bg-black/30 text-white"
         aria-label="Next slide"
       >
         <svg
@@ -189,44 +213,19 @@ export function HeroCarousel({
         </svg>
       </button>
 
-      <div className="absolute left-1/2 -translate-x-1/2 bottom-4 z-20 flex gap-3">
+      {/* Indicadores */}
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-6 z-20 flex gap-3">
         {images.map((_, i) => (
           <button
             key={i}
-            className={`w-3 h-3 rounded-full focus:outline-none ring-1 ring-white/30 transition-all ${i === index ? "scale-110 bg-white" : "bg-white/40"}`}
+            className={`w-3 h-3 rounded-full focus:outline-none ring-1 ring-white/30 transition-all ${
+              i === index ? "scale-110 bg-white" : "bg-white/40"
+            }`}
             onClick={() => setIndex(i)}
             aria-label={`Go to slide ${i + 1}`}
             aria-current={i === index}
           />
         ))}
-      </div>
-      <div className="absolute top-0 left-0 w-full h-full text-white bg-black/10">
-        <div className="grid grid-rows-3 h-screen md:pl-32">
-          <div className=""></div>
-          <div className=""></div>
-          <div className="flex items-start flex-col justify-start px-4 md:p-16">
-            <div
-              className={`${montserrat.className} font-bold text-lg mb-2 shadow-2xl`}
-            >
-              Camping los Pilos
-            </div>
-
-            <h4
-              className={`${montserrat.className}`}
-              style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.6)" }}
-            >
-              <motion.div
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.2, ease: "easeOut" }}
-                className="font-bold text-3xl md:text-5xl max-w-4xl  "
-              >
-                {images[index].slogan}
-              </motion.div>
-            </h4>
-          </div>
-        </div>
       </div>
     </section>
   );

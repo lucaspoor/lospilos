@@ -12,7 +12,7 @@ const courses = [
 
 const ServiciosInstalaciones = () => {
   return (
-    <div className=" text-white py-10 bg-cyan-600">
+    <div id="link_sitios" className=" scroll-m-20 text-white py-10 bg-cyan-600">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
         {/* Logo y descripción */}
         <div className="text-sm">
@@ -60,6 +60,10 @@ const ServiciosInstalaciones = () => {
               <li>Parque de juegos infantil</li>
             </ul>
           </div>
+        </div>
+        <div className="col-span-2 flex items-center justify-center">
+          <img alt="" src="/im/hero/carpas.png" >
+          </img>
         </div>
       </div>
     </div>

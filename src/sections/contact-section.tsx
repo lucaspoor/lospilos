@@ -18,15 +18,15 @@ export default function ContactSection() {
       className="relative bg-white text-gray-800 py-20 md:px-6 px-4"
       id="link_contacto"
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-12">
         {/* Columna izquierda: Formulario */}
-        <div className="bg-gray-50 rounded-2xl md:p-8 p-6 shadow-lg border border-gray-200">
+        <div className="bg-gray-50 md:order-1 order-2 rounded-2xl md:p-8 p-6 shadow-lg border border-gray-200">
           <h2 className="text-3xl mb-6 text-cyan-700">Contáctanos</h2>
           <ContactFormContainer />
         </div>
 
         {/* Columna derecha: Datos de contacto */}
-        <div className="flex flex-col justify-center space-y-6 mx-4">
+        <div className="flex flex-col md:order-2 order-1 justify-center space-y-6 mx-4">
           <h2 className="text-3xl mb-2 text-cyan-700">
             Información de contacto
           </h2>
@@ -36,15 +36,16 @@ export default function ContactSection() {
           </p>
 
           <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-center gap-3">
+              <MessageCircle className="text-cyan-500" /> WhatsApp: +56 9 9597 4344
+            </li>
             <li className="flex items-center gap-3">
               <Phone className="text-cyan-500" /> +56 9 9597 4344
             </li>
             <li className="flex items-center gap-3">
               <Mail className="text-cyan-500" /> {atob(enc)}
             </li>
-            <li className="flex items-center gap-3">
-              <MessageCircle className="text-cyan-500" /> WhatsApp: +56 9 9597 4344
-            </li>
+      
           </ul>
 
           {/* Horarios */}
