@@ -62,8 +62,7 @@ const ServiciosInstalaciones = () => {
           </div>
         </div>
         <div className="col-span-2 flex items-center justify-center">
-          <img alt="" src="/im/hero/carpas.png" >
-          </img>
+          <img alt="" src="/im/hero/carpas.jpeg"></img>
         </div>
       </div>
     </div>
