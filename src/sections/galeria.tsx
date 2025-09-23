@@ -21,7 +21,7 @@ const images = [
 export default function Galeria() {
   return (
     <section id="link_galeria" className=" bg-white">
-      <div id="lucas" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="lucas" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 data-aos="fade-up" className="text-4xl text-cyan-800 mb-4">
           Galería de fotos
         </h2>

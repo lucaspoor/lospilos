@@ -31,7 +31,7 @@ const data = [
 export default function Servicios() {
   return (
     <div className="w-full bg-white flex-col flex items-center  pt-20">
-      <div className="max-w-5xl mx-auto px-6 ">
+      <div className="max-w-6xl mx-auto px-6 ">
         <h2 data-aos="fade-up" className="text-4xl text-cyan-900 mb-4">
           Instalaciones y Servicios{" "}
         </h2>

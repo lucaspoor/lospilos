@@ -7,7 +7,7 @@ export function AtractivosZona() {
 
   return (
     <div className="w-full bg-white flex-col flex items-center ">
-      <div className="max-w-5xl mx-auto px-6 ">
+      <div className="max-w-6xl mx-auto px-6 ">
         <h2 data-aos="fade-up" className="text-4xl text-cyan-900 mb-4">
           Turismo en la zona
         </h2>

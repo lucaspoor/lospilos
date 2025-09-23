@@ -29,7 +29,7 @@ export default function CampingLosPilos() {
     <div className="min-h-screen bg-gradient-to-b from-sky-50 to-white text-gray-800">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow z-50">
-        <div className="max-w-5xl mx-auto flex justify-between items-center px-6 py-3">
+        <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
           <h1 className="font-bold text-lg text-sky-700">Camping Los Pilos</h1>
           <ul className="flex space-x-4 text-sm font-medium">
             {sections.map((s) => (
@@ -87,7 +87,7 @@ export default function CampingLosPilos() {
       {/* Historia y ubicación */}
       <motion.section
         id="historia"
-        className="max-w-5xl mx-auto py-12 px-6"
+        className="max-w-6xl mx-auto py-12 px-6"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -110,7 +110,7 @@ export default function CampingLosPilos() {
       {/* Instalaciones */}
       <motion.section
         id="instalaciones"
-        className="max-w-5xl mx-auto py-12 px-6 bg-sky-50 rounded-2xl shadow-sm"
+        className="max-w-6xl mx-auto py-12 px-6 bg-sky-50 rounded-2xl shadow-sm"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -147,7 +147,7 @@ export default function CampingLosPilos() {
       {/* Tarifas */}
       <motion.section
         id="tarifas"
-        className="max-w-5xl mx-auto py-12 px-6"
+        className="max-w-6xl mx-auto py-12 px-6"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -164,7 +164,7 @@ export default function CampingLosPilos() {
       {/* Opiniones */}
       <motion.section
         id="opiniones"
-        className="max-w-5xl mx-auto py-12 px-6 bg-sky-50 rounded-2xl shadow-sm"
+        className="max-w-6xl mx-auto py-12 px-6 bg-sky-50 rounded-2xl shadow-sm"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -194,7 +194,7 @@ export default function CampingLosPilos() {
       {/* Contacto */}
       <motion.section
         id="contacto"
-        className="max-w-5xl mx-auto py-12 px-6"
+        className="max-w-6xl mx-auto py-12 px-6"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -228,7 +228,7 @@ export default function CampingLosPilos() {
       {/* Resumen rápido */}
       <motion.section
         id="resumen"
-        className="max-w-5xl mx-auto py-12 px-6"
+        className="max-w-6xl mx-auto py-12 px-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

@@ -41,7 +41,7 @@ export default function Actividades() {
 
   return (
     <section id="link_actividades" className="bg-white py-16 px-6">
-      <div data-aos="fade-up" className="max-w-5xl mx-auto relative">
+      <div data-aos="fade-up" className="max-w-6xl mx-auto relative">
         <h2 className="text-4xl text-cyan-800 text-center mb-4">
           Actividades Y Entretenimiento
         </h2>
