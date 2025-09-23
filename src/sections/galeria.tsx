@@ -20,13 +20,14 @@ const images = [
 
 export default function Galeria() {
   return (
-    <section  id="link_galeria" className="py-24 pb-32 bg-white">
-      <div  id="lucas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 data-aos="fade-up" className="text-4xl text-cyan-800 text-center mb-4">
+    <section id="link_galeria" className=" bg-white">
+      <div id="lucas" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 data-aos="fade-up" className="text-4xl text-cyan-800 mb-4">
           Galería de fotos
         </h2>
-        <p data-aos="fade-up" className="text-center mb-12 text-gray-600">
-          ¡Una selección de fotos de los paisajes y espacios que encuentras en los Pilos y sus alrededores!
+        <p data-aos="fade-up" className="mb-12 text-cyan-800">
+          ¡Una selección de fotos de los paisajes y espacios que encuentras en
+          los Pilos y sus alrededores!
         </p>
         <PhotoGallery images={images}></PhotoGallery>
       </div>

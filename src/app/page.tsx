@@ -55,11 +55,10 @@ export default function Home() {
       <NavRender></NavRender>
       <Heroe></Heroe>
       <Servicios></Servicios>
-      <Actividades></Actividades>
       <Galeria></Galeria>
-      <Ubicacion></Ubicacion>
       <AtractivosZona />
       <ServiciosInstalaciones></ServiciosInstalaciones>
+      <Ubicacion></Ubicacion>
       <ContactSection></ContactSection>
       <Footer></Footer>
     </div>
