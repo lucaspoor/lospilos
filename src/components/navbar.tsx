@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { link } from "fs";
 
-export default function Navbar({classname, bg}:any) {
+export default function Navbar({ classname, bg }: any) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navbar = [
@@ -19,14 +19,19 @@ export default function Navbar({classname, bg}:any) {
     <nav
       className={`text-white ${classname} w-full z-50`}
       style={{
-        background: bg
+        background: bg,
       }}
-
     >
       <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
 
-        <img src="/im/logowhite.png" className="p-2 lg:w-56 w-48"></img>
+        <a href="http://www.campinglospilos.cl">
+          <img
+            src="/im/logowhite.png"
+            className="p-2 lg:w-56 w-48"
+            alt="Camping Los Pilos"
+          ></img>
+        </a>
         {/* Links - versión escritorio */}
         <ul className="hidden md:flex space-x-6">
           {navbar.map((e, i) => {
@@ -53,7 +58,7 @@ export default function Navbar({classname, bg}:any) {
 
       <div
         style={{
-          backgroundColor: bg
+          backgroundColor: bg,
         }}
         className={`
           absolute top-20 left-0 w-full md:hidden
