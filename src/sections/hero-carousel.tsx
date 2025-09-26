@@ -119,7 +119,6 @@ export function HeroCarousel({
           >
             <img
               src={img.src}
-              alt={img.alt ?? `Slide ${i + 1}`}
               className="object-cover w-full h-full"
               loading={i === index ? "eager" : "lazy"}
             />
