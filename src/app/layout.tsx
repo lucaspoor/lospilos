@@ -37,15 +37,15 @@ export const metadata: Metadata = {
     title: "Camping Los Pilos",
     description:
       "Camping 'Los Pilos': excelente espacio para carpas, quincho, baños de primera calidad en bella playa de arena blanca en el Caburgua",
-    url: "https://lospilos.cl",
+    url: "https://www.campinglospilos.cl",
     siteName: "Camping Los Pilos",
     locale: "es_CL",
     type: "website",
     images: [
       {
-        url: "/favicon-96x96.png", // Make sure to add this image to your public folder
-        width: 1200,
-        height: 630,
+        url: "/camping-los-pilos.png", // Make sure to add this image to your public folder
+        width: 718,
+        height: 1229,
         alt: "Camping Los Pilos",
       },
     ],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Camping Los Pilos",
     description:
-      "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construit junto a tus amigos y famililia, memorias para toda la vida",
+      "Bienvenido al camping 'Los Pilos' un maravilloso espacio natural en el que podras construir junto a tus amigos y familia, memorias para toda la vida",
     images: ["/favicon-96x96.png"], // Same image as OpenGraph
   },
 
