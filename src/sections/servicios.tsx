@@ -25,7 +25,12 @@ const data = [
       "Disfruta de baños y duchas con agua caliente, siempre limpios y cómodos para tu tranquilidad. Además, contamos con amplios estacionamientos seguros y de fácil acceso, pensados para que tu experiencia de camping sea práctica y sin preocupaciones, desde que llegas hasta el momento de partir.",
     img: "/im/nuevas/baños.jpeg",
   },
-
+  {
+    title: "JUEGOS INFANTILES",
+    description:
+      "Unos clásicos juegos de madera: castillos, casas, toboganes y columpios para que tus hijos puedan desarrollar sus habilidades y compartir con amigos.",
+    img: "/im/gal/juegos-horizontal.jpeg",
+  },
 ];
 
 export default function Servicios() {
