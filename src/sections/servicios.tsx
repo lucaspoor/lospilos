@@ -16,7 +16,7 @@ const data = [
   {
     title: "ÁREAS DE PICNIC",
     description:
-      "Disfruta momentos inolvidables alrededor de una fogata o compartiendo en nuestras áreas de picnic. Perfectas para reuniones familiares o entre amigos, cuentan con mesas y espacios preparados para pasar tardes agradables al aire libre. Ademas los campings cuentan con parrilla para que puedas realizar un asado de ensueño junto a tu familia o amigos.",
+      "Disfruta momentos inolvidables alrededor de una fogata o compartiendo en nuestras áreas de picnic. Perfectas para reuniones familiares o entre amigos, cuentan con mesas y espacios preparados para pasar tardes agradables al aire libre. Los campings cuentan con parrilla para que puedas realizar un asado de ensueño junto a tu familia y amigos.",
     img: "/im/nuevas/vistas.jpeg",
   },
   {

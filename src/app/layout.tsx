@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Camping Los Pilos",
   description:
-    "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construit junto a tus amigos y famililia, memorias para toda la vida",
+    "Camping 'Los Pilos': excelente espacio para carpas, quincho, baños de primera calidad en bella playa de arena blanca en el Caburgua",
   keywords:
     "camping, Los Pilos, Pucón, naturaleza, aventura, turismo, Chile, araucania",
   authors: [{ name: "Camping Los Pilos" }],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Camping Los Pilos",
     description:
-      "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construit junto a tus amigos y famililia, memorias para toda la vida",
+      "Camping 'Los Pilos': excelente espacio para carpas, quincho, baños de primera calidad en bella playa de arena blanca en el Caburgua",
     url: "https://lospilos.cl",
     siteName: "Camping Los Pilos",
     locale: "es_CL",
