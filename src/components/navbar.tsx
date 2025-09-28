@@ -4,16 +4,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { link } from "fs";
+import { enlaces } from "./enlaces";
 
 export default function Navbar({ classname, bg }: any) {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navbar = [
-    { text: "Inicio", link: "#link_inicio" },
-    { text: "Actividades", link: "#link_actividades" },
-    { text: "Ubicación", link: "#link_ubicacion" },
-    { text: "Contacto", link: "#link_contacto" },
-  ];
 
   return (
     <nav
@@ -34,7 +28,7 @@ export default function Navbar({ classname, bg }: any) {
         </a>
         {/* Links - versión escritorio */}
         <ul className="hidden md:flex space-x-6">
-          {navbar.map((e, i) => {
+          {enlaces.map((e, i) => {
             return (
               <li key={e.text}>
                 <Link href={e.link} className="hover:text-cyan-300 transition">
@@ -71,7 +65,7 @@ export default function Navbar({ classname, bg }: any) {
         `}
       >
         <div className="flex flex-col shadow-2xl items-center py-8 space-y-4">
-          {navbar.map((e, i) => {
+          {enlaces.map((e, i) => {
             return (
               <Link
                 key={e.text}

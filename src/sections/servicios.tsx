@@ -16,13 +16,13 @@ const data = [
   {
     title: "ÁREAS DE PICNIC",
     description:
-      "Disfruta momentos inolvidables alrededor de una fogata o compartiendo en nuestras áreas de picnic. Perfectas para reuniones familiares o entre amigos, cuentan con mesas y espacios preparados para pasar tardes agradables al aire libre. Los campings cuentan con parrilla para que puedas realizar un asado de ensueño junto a tu familia y amigos.",
+      "Disfruta momentos inolvidables compartiendo en nuestras áreas de picnic. Perfectas para reuniones familiares o entre amigos, cuentan con mesas y espacios preparados para pasar tardes agradables al aire libre. Los campings cuentan con parrilla para que puedas realizar un asado de ensueño junto a tu familia y amigos.",
     img: "/im/nuevas/vistas.jpeg",
   },
   {
     title: "BAÑOS Y ESTACIONAMIENTOS",
     description:
-      "Disfruta de baños y duchas con agua caliente, siempre limpios y cómodos para tu tranquilidad. Además, contamos con amplios estacionamientos seguros y de fácil acceso, pensados para que tu experiencia de camping sea práctica y sin preocupaciones, desde que llegas hasta el momento de partir.",
+      "Descansa con total comodidad en nuestras instalaciones de primer nivel: baños y duchas con agua caliente disponibles 24/7, mantenidos con los más altos estándares de limpieza. Tu vehículo estará seguro en nuestros amplios estacionamientos de fácil acceso, diseñados estratégicamente para que tu única preocupación sea disfrutar de tu estadía, desde el momento de tu llegada hasta tu partida.",
     img: "/im/nuevas/baños.jpeg",
   },
   {
@@ -35,7 +35,10 @@ const data = [
 
 export default function Servicios() {
   return (
-    <div className="w-full bg-white flex-col flex items-center  pt-20">
+    <div
+      className="w-full bg-white flex-col flex items-center  pt-20"
+      id="link_instalaciones"
+    >
       <div className="max-w-6xl mx-auto px-6 ">
         <h2 data-aos="fade-up" className="text-4xl text-cyan-900 mb-4">
           Instalaciones y Servicios{" "}

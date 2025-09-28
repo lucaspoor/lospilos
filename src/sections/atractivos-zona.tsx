@@ -6,7 +6,10 @@ export function AtractivosZona() {
   const [vermas, setVermas] = useState(false);
 
   return (
-    <div className="w-full bg-white flex-col flex items-center ">
+    <div
+      className="w-full bg-white flex-col flex items-center "
+      id="link_turismo"
+    >
       <div className="max-w-6xl mx-auto px-6 ">
         <h2 data-aos="fade-up" className="text-4xl text-cyan-900 mb-4">
           Turismo en la zona

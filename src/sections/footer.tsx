@@ -1,3 +1,4 @@
+import { enlaces } from "@/components/enlaces";
 import { Facebook, Instagram, Globe } from "lucide-react";
 
 const enc = "Y29udGFjdG9AbG9zcGlsb3MuY2w=";
@@ -20,36 +21,13 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
           <ul className="space-y-2">
-            <li>
-              <a href="#link_inicio" className="hover:text-cyan-300 transition">
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href="#link_actividades"
-                className="hover:text-cyan-300 transition"
-              >
-                Actividades
-              </a>
-            </li>
-            <li>
-              <a
-                href="#link_ubicacion"
-                className="hover:text-cyan-300 transition"
-              >
-                Ubicación
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#link_contacto"
-                className="hover:text-cyan-300 transition"
-              >
-                Contacto
-              </a>
-            </li>
+            {enlaces.map((e) => (
+              <li>
+                <a href={e.link} className="hover:text-cyan-300 transition">
+                  {e.text}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
