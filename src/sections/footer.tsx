@@ -22,7 +22,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Enlaces</h3>
           <ul className="space-y-2">
             {enlaces.map((e) => (
-              <li>
+              <li key={e.link}>
                 <a href={e.link} className="hover:text-cyan-300 transition">
                   {e.text}
                 </a>

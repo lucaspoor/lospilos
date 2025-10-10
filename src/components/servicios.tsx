@@ -21,7 +21,7 @@ const ServiciosInstalaciones = () => {
           </h2>
 
           <div className="mb-4">
-            <h3 className="text-lg font-bold">Playa privada</h3>
+            <h3 className="text-lg font-bold">Playa</h3>
             <ul>
               <li>Acceso directo al Lago Caburgua</li>
             </ul>

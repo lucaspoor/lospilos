@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Camping Los Pilos",
   description:
-    "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construit junto a tus amigos y famililia, memorias para toda la vida",
+    "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construir junto a tus amigos y familia, memorias para toda la vida",
   keywords:
-    "camping, Los Pilos, Pucón, naturaleza, aventura, turismo, Chile, araucania",
+    "camping, Los Pilos, Pucón, naturaleza, aventura, turismo, Chile, araucania, Camping en La Araucanía, Campings Zona Lacustre",
   authors: [{ name: "Camping Los Pilos" }],
   creator: "http://www.pooweb.cl",
   publisher: "Camping Los Pilos",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Camping Los Pilos",
     description:
-      "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construit junto a tus amigos y famililia, memorias para toda la vida",
+      "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construir junto a tus amigos y familia, memorias para toda la vida",
     url: "https://lospilos.cl",
     siteName: "Camping Los Pilos",
     locale: "es_CL",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Camping Los Pilos",
     description:
-      "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construit junto a tus amigos y famililia, memorias para toda la vida",
+      "Bienvenido al camping 'los pilos' un maravilloso espacio natural en el que podras construir junto a tus amigos y familia, memorias para toda la vida",
     images: ["/favicon-96x96.png"], // Same image as OpenGraph
   },
 
