@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
       </div>
       <a
-        className="bottom-4 right-4 fixed"
+        className="bottom-4 right-4 fixed z-50"
         aria-label="Chat on WhatsApp"
         href="https://wa.me/56995974344"
       >
