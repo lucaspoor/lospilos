@@ -9,6 +9,15 @@ services:
       - "3500:3000"
     env_file:
       - .env
+    restart: unless-stopped        
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "--timeout","5", "http://localhost:3000"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
 
 volumes:
   node_modules:
+
+
