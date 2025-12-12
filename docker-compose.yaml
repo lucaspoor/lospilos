@@ -9,7 +9,7 @@ services:
       - "3500:3000"
     env_file:
       - .env
-    restart: unless-stopped        
+    restart: always
     healthcheck:
       test: ["CMD", "wget", "--spider", "-q", "--timeout","5", "http://localhost:3000"]
       interval: 10s
@@ -19,5 +19,4 @@ services:
 
 volumes:
   node_modules:
-
 
