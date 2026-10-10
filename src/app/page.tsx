@@ -58,6 +58,7 @@ export default function Home() {
       <Galeria></Galeria>
       <AtractivosZona />
       <ServiciosInstalaciones></ServiciosInstalaciones>
+      <Reserva />
       <Ubicacion></Ubicacion>
       <ContactSection></ContactSection>
       <Footer></Footer>
