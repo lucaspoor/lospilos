@@ -22,7 +22,7 @@ export default function Navbar({ classname, bg }: any) {
         <a href="http://www.campinglospilos.cl">
           <img
             src="/im/icono-nuevo.png"
-            className="p-2 lg:w-36 w-48"
+            className="p-2  lg:w-36 w-30"
             alt="Camping Los Pilos"
           ></img>
         </a>
