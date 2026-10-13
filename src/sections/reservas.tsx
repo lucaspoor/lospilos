@@ -38,7 +38,7 @@ export default function ReservaTarifa() {
         <div data-aos="fade-up" className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl mb-4">TARIFAS 2026-2027</h2>
           <p className="uppercase text-sm text-cyan-200">
-            Check-in 15:00 · Check-out 11:00
+            Check-in 16:00 · Check-out 12:00
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function ReservaTarifa() {
 
         <p className="flex items-center gap-2 text-sm text-cyan-100 mt-8">
           <Info size={16} className="shrink-0" />
-          *Todas las personas, desde los 4 años, pagan tarifa normal.
+          *Todas las personas a partir de 1 año, pagan tarifa normal.
         </p>
 
         <div className="text-center mt-8">
